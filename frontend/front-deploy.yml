@@ -20,8 +20,10 @@ spec:
           image: sreenathkk96/frontend_employee_table:latest
           imagePullPolicy: Always
           stdin: true
+          tty: true
           ports:
             - containerPort: 3000
+      restartPolicy: Always
 
 
 ---
