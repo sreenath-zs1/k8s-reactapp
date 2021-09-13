@@ -1,7 +1,10 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  labels:
+        app: frontend
 spec:
   selector:
     matchLabels:
@@ -16,11 +19,12 @@ spec:
         - name: frontend
           image: sreenathkk96/frontend_employee_table:latest
           imagePullPolicy: Always
+          stdin: true
           ports:
-            - containerPort: 80
+            - containerPort: 3000
 
 
-
+---
 # apiVersion: apps/v1
 # kind: Deployment
 # metadata:
