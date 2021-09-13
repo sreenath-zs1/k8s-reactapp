@@ -4,12 +4,11 @@ kind: Deployment
 metadata:
   name: frontend
   labels:
-        app: frontend
+     app: frontend
 spec:
   selector:
     matchLabels:
       app: frontend
-  replicas: 1
   template:
     metadata:
       labels:
