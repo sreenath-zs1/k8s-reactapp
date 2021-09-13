@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back
+spec:
+  selector:
+    matchLabels:
+      app: back
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: back
+    spec:
+      containers:
+        - name: back
+          image: sreenathkk96/backend_employee_table:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+
+
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   creationTimestamp: null
+#   labels:
+#     app: backend
+#   name: backend
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: backend
+#   template:
+#     metadata:
+#       creationTimestamp: null
+#       labels:
+#         app: backend
+#     spec:
+#       serviceAccountName: backend-sva
+#       containers:
+#       - image: 1234567890/todolist:backend-v11
+#         name: todolist
+#         env:
+#           - name: DB_NAME
+#             value: "todolist"
+#           - name: MYSQL_HOST
+#             value: "mysql-service"
+#           - name: MYSQL_USER
+#             value: "root"
+#           - name: MYSQL_PORT
+#             value: "3306"
+#           - name: MYSQL_PASSWORD
+#             value: "mysql123"
+#         ports:
+#           - containerPort: 8000
+#         volumeMounts:
+#           - mountPath: /var/log/
+#             name: backend
+#         command: ["/bin/sh", "-c"]
+#         args:
+#           - apt-get update;
+#             apt-get -y install vim;
+#             python manage.py makemigrations bucket;
+#             python manage.py migrate;
+#             python manage.py runserver 0.0.0.0:8000
+#       volumes:
+#         - name: backend
+#           hostPath:
+#             path: /var/log/
