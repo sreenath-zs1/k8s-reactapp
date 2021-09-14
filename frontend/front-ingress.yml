@@ -18,5 +18,7 @@ spec:
           - path: /api/?(.*)
             pathType: Prefix
             backend:
-            serviceName: back
-            servicePort: 8080
+            service:
+              name: back
+              port: 
+               number: 8080
