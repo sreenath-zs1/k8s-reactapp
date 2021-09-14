@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: mongodb
   labels:
-    appdb: mongodb
+    app: mongodb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      appdb: mongodb
+      app: mongodb
   template:
     metadata:
       labels:
-        appdb: mongodb
+        app: mongodb
     spec:
       containers:
         - name: mongodb
           image: mongo
           ports:
-            - name: mongodb
+            - name: mongo
               containerPort: 27017
