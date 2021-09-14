@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-deploy
+  name: mongodb
   labels:
     appdb: mongodb
 spec:
@@ -15,7 +15,8 @@ spec:
         appdb: mongodb
     spec:
       containers:
-        - name: mongodb-deploy
+        - name: mongodb
           image: mongo
           ports:
-            - containerPort: 27017
+            - name: mongodb
+              containerPort: 27017

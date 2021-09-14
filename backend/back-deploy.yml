@@ -13,11 +13,43 @@ spec:
         app: back
     spec:
       containers:
-        - name: back
+        - name: back-end
           image: sreenathkk96/backend_employee_table:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
