@@ -16,6 +16,7 @@ spec:
                 port:
                   number: 3000
           - path: /api/?(.*)
+            pathType: Prefix
             backend:
             serviceName: back
             servicePort: 8080
