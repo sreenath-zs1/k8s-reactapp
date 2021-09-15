@@ -16,7 +16,7 @@ spec:
           image: sreenathkk96/backend_employee_table:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           command: [ "sleep" ]
           args: [ "infinity" ]
           
