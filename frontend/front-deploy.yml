@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sreenathkk96/frontend:latest
+          image: sreenathkk96/frontend:0.0.1
           imagePullPolicy: Always
           stdin: true
           tty: true
