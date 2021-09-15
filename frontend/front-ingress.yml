@@ -15,10 +15,10 @@ spec:
                 name: frontend
                 port:
                   number: 3000
-          - path: /api/v1/employees
+          - path: /employees
             pathType: Prefix
             backend:
               service:
                 name: back
                 port: 
-                 number: 8081
+                 number: 8080

@@ -12,11 +12,11 @@ spec:
         app: back
     spec:
       containers:
-        - name: back-end
-          image: sreenathkk96/backend_employee_table:latest
+        - name: back
+          image: sreenathkk96/backend:0.0.1
           imagePullPolicy: Always
           ports:
-            - containerPort: 8081
+            - containerPort: 8080
           command: [ "sleep" ]
           args: [ "infinity" ]
           
