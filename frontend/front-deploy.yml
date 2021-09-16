@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sreenathkk96/frontend:0.0.10c 
+          image: sreenathkk96/frontend:0.0.11c  #11c for back-service image in localhost
           imagePullPolicy: Always
           stdin: true
           tty: true
@@ -31,7 +31,7 @@ spec:
 
 
 
-
+#https://loom.com/share/2348e31049bf4f0b8d2f1b37fe2c05b9 16-09-2021
 #https://loom.com/share/7a98d563a64144f685f9fe25a7628917 k8s frontend page working
 # https://loom.com/share/ae6c3bf1dffa4d6e951735da7c6fb748
 
