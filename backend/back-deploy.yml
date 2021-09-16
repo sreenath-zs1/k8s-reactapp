@@ -13,9 +13,9 @@ spec:
     spec:
       containers:
         - name: back
-          image: sreenathkk96/backend:0.0.4
+          image: sreenathkk96/backend:0.05
           imagePullPolicy: Always
-          
+
           ports:
             - containerPort: 8080
           command: [ "sleep" ]
