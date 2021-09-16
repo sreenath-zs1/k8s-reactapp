@@ -13,13 +13,17 @@ spec:
     spec:
       containers:
         - name: back
-          image: sreenathkk96/backend:0.0.3
+          image: sreenathkk96/backend:0.0.4
           imagePullPolicy: Always
+          
           ports:
             - containerPort: 8080
           command: [ "sleep" ]
           args: [ "infinity" ]
           
+          env:
+            - name: MONGO_URL
+              value: mongodb://mongo:27017/EmployeeDB
 
 # env:
 #             - name: MONGO_DB
