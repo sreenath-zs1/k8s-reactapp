@@ -9,7 +9,8 @@ spec:
     - port: 8080
       protocol: TCP
       targetPort: 8080
-  # type: ClusterIP
+      nodePort: 30001
+  type: NodePort
 
 
 
