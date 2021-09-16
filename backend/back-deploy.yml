@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: back
+  name: back-deploy
 spec:
   selector:
     matchLabels:
-      app: back
+      component: backend
   template:
     metadata:
       labels:
-        app: back
+        component: backend
     spec:
       containers:
-        - name: back
+        - name: backend
           image: sreenathkk96/backend:0.05
           imagePullPolicy: Always
 

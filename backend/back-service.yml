@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: back
+  name: back-service
 spec:
   selector:
-    app: back
+    component: backend
   ports:
-    - port: 80
+    - port: 8080
       protocol: TCP
       targetPort: 8080
   type: ClusterIP
