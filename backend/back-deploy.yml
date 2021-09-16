@@ -21,7 +21,17 @@ spec:
           args: [ "infinity" ]
           
 
-
+# env:
+#             - name: MONGO_DB
+#               valueFrom:
+#                 configMapKeyRef:
+#                   name: movie-db-config  
+#                   key: database
+#             - name: MONGO_HOST
+#               valueFrom:
+#                 configMapKeyRef:
+#                   name: movie-db-config 
+#                   key: host
 
 
 
