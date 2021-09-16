@@ -18,8 +18,7 @@ spec:
 
           ports:
             - containerPort: 8080
-          command: [ "sleep" ]
-          args: [ "infinity" ]
+    
           
           env:
             - name: MONGO_URL
