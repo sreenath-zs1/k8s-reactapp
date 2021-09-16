@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sreenathkk96/frontend:0.0.11c  #11c for back-service image in localhost
+          image: sreenathkk96/frontend:0.0.12c  #12c for back-service name put  in localhost
           imagePullPolicy: Always
           stdin: true
           tty: true
