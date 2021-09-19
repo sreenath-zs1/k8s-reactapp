@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sreenathkk96/frontend:0.0.12c  #12c for back-service name put  in localhost
+          image: sreenathkk96/frontend:0.0.13E  #12c for back-service name put  in localhost #13E for Elasticip and 80port
           imagePullPolicy: Always
           stdin: true
           tty: true
