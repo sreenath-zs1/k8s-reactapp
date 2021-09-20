@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
           env:
             - name: BACKEND_API
-              value: 44.199.80.225
+              value: 54.158.129.141
      
 
 
