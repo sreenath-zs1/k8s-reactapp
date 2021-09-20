@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
           env:
             - name: BACKEND_API
-              value: 54.158.129.141
+              value: k3dzelar-employee.sree-cloud-devops.online #dns record name for elaticip
      
 
 
