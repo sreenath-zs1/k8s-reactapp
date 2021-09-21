@@ -15,15 +15,20 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sreenathkk96/frontend:0.0.16  #12c for back-service name put  in localhost #13E for Elasticip and 80port #14P public ip with 80port
+          image: sreenathkk96/frontendreact:0.0.17  #12c for back-service name put  in localhost #13E for Elasticip and 80port #14P public ip with 80port 17 for without .env pass env
           imagePullPolicy: Always
           stdin: true
           tty: true
           ports:
             - containerPort: 3000
           env:
-            - name: BACKEND_API
-              value: k3dzelar-employee.sree-cloud-devops.online #dns record name for elaticip
+            - name: REACT_APP_API_URL
+              value: http://54.158.129.141:8080/api/v1/employees
+
+
+          # env:
+          #   - name: BACKEND_API
+          #     value: k3dzelar-employee.sree-cloud-devops.online #dns record name for elaticip
      
 
 
