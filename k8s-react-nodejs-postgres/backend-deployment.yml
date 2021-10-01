@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  selector:
+    matchLabels:
+      component: backend
+  template:
+    metadata:
+      labels:
+        component: backend
+    spec:
+      containers:
+        - name: backend
+          image: sreenathkk96/rnp-backend:0.0.1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: USERNAME
+              value: postgres
+            - name: HOST
+              value: postgres-service
+            - name: DATABASE
+              value: loizenaidb
+            - name: PASSWORD
+              value: Postgres
