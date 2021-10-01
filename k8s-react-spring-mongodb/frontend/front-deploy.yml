@@ -25,7 +25,10 @@ spec:
             - name: REACT_APP_API_URL
               value: http://54.158.129.141:8080/api/v1/employees
 
+ 
 
+
+ #k3d cluster confirm 8080:80
           # env:
           #   - name: BACKEND_API
           #     value: k3dzelar-employee.sree-cloud-devops.online #dns record name for elaticip
