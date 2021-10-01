@@ -15,7 +15,7 @@ spec:
         - name: backend
           image: sreenathkk96/rnp-backend:0.0.1
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
           env:
             - name: USERNAME
               value: postgres
