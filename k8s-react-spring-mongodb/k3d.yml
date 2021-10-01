@@ -1,0 +1,14 @@
+kind: Simple
+apiVersion: k3d.io/v1alpha2
+name: k3d-sree
+image: rancher/k3s:v1.20.4-k3s1
+servers: 1
+agents: 2
+ports:
+- port: 8080:80
+  nodeFilters:
+  - loadbalancer
+
+
+#kubectl create deployment nginx --image=nginx
+#kubectl create service clusterip nginx --tcp=80:80
